@@ -1,0 +1,65 @@
+{
+  "customers": 10000,
+  "churn_rate": 0.2037,
+  "by_Geography": {
+    "France": 16.15,
+    "Germany": 32.44,
+    "Spain": 16.67
+  },
+  "by_age_group": {
+    "18-29": 7.56,
+    "30-39": 10.88,
+    "40-49": 30.79,
+    "50-59": 56.04,
+    "60+": 27.95
+  },
+  "by_products": {
+    "1": 27.71,
+    "2": 7.58,
+    "3-4": 85.89
+  },
+  "by_IsActiveMember": {
+    "0": 26.85,
+    "1": 14.27
+  },
+  "by_Gender": {
+    "Female": 25.07,
+    "Male": 16.46
+  },
+  "by_zero_balance": {
+    "0": 24.08,
+    "1": 13.82
+  },
+  "segments": [
+    {
+      "segment_name": "Active, high-balance",
+      "customers": 2505,
+      "actual_churn_rate": 0.126
+    },
+    {
+      "segment_name": "Dormant, near-zero balance",
+      "customers": 1728,
+      "actual_churn_rate": 0.164
+    },
+    {
+      "segment_name": "Senior customers",
+      "customers": 961,
+      "actual_churn_rate": 0.32
+    },
+    {
+      "segment_name": "High-balance, inactive",
+      "customers": 1979,
+      "actual_churn_rate": 0.324
+    },
+    {
+      "segment_name": "Active, low-balance",
+      "customers": 1725,
+      "actual_churn_rate": 0.082
+    },
+    {
+      "segment_name": "Multi-product, inactive",
+      "customers": 1102,
+      "actual_churn_rate": 0.314
+    }
+  ]
+}

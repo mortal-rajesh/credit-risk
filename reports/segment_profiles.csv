@@ -1,0 +1,7 @@
+segment,segment_name,customers,age,credit_score,balance,products,tenure,salary,active,actual_churn_rate,avg_predicted_churn,share_of_customers
+0,"Active, high-balance",2505,35.45,655.768,122091.024,1.312,4.798,100696.686,1.0,0.126,0.127,0.25
+1,"Dormant, near-zero balance",1728,36.34,648.115,923.881,1.771,5.105,99393.742,0.0,0.164,0.165,0.173
+2,Senior customers,961,60.902,652.614,77297.133,1.388,4.895,93006.761,0.878,0.32,0.306,0.096
+3,"High-balance, inactive",1979,38.029,647.008,121460.252,1.0,5.082,101838.76,0.0,0.324,0.325,0.198
+4,"Active, low-balance",1725,35.783,648.548,5178.508,1.841,5.122,100202.902,1.0,0.082,0.085,0.172
+5,"Multi-product, inactive",1102,38.209,650.01,121451.091,2.238,5.164,102664.613,0.07,0.314,0.308,0.11

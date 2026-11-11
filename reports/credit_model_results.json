@@ -1,0 +1,126 @@
+{
+  "split": {
+    "train": 89539,
+    "val": 29847,
+    "test": 29847
+  },
+  "selected_model": "Gradient Boosting (tuned)",
+  "selection_rule": "highest validation PR-AUC; threshold = max-F1 on validation",
+  "tuned_cv_pr_auc": 0.39789524356358313,
+  "calibrated_brier_score_test": 0.04940669966833112,
+  "best_params": {
+    "m__min_samples_leaf": 100,
+    "m__max_leaf_nodes": 15,
+    "m__max_iter": 200,
+    "m__max_depth": 4,
+    "m__learning_rate": 0.05,
+    "m__l2_regularization": 5
+  },
+  "results": {
+    "Logistic Regression": {
+      "validation": {
+        "threshold": 0.7779,
+        "accuracy": 0.9109123194960967,
+        "precision": 0.3744274809160305,
+        "recall": 0.49025487256371814,
+        "f1": 0.4245834235014066,
+        "roc_auc": 0.851807594730251,
+        "pr_auc": 0.36716465167367524
+      },
+      "test": {
+        "threshold": 0.7779,
+        "accuracy": 0.9099742017623211,
+        "precision": 0.3726800296956199,
+        "recall": 0.5017491254372813,
+        "f1": 0.4276890308839191,
+        "roc_auc": 0.8559437960399245,
+        "pr_auc": 0.36947107030754867
+      }
+    },
+    "Random Forest": {
+      "validation": {
+        "threshold": 0.7216,
+        "accuracy": 0.9162729922605287,
+        "precision": 0.39795081967213114,
+        "recall": 0.4852573713143428,
+        "f1": 0.4372888988966449,
+        "roc_auc": 0.8547445734146502,
+        "pr_auc": 0.3863399637805485
+      },
+      "test": {
+        "threshold": 0.7216,
+        "accuracy": 0.9164405132844172,
+        "precision": 0.39909946786737616,
+        "recall": 0.487256371814093,
+        "f1": 0.4387938793879388,
+        "roc_auc": 0.8603797289748433,
+        "pr_auc": 0.39018556917709923
+      }
+    },
+    "Gradient Boosting (tuned)": {
+      "validation": {
+        "threshold": 0.7594,
+        "accuracy": 0.910108218581432,
+        "precision": 0.37769010043041606,
+        "recall": 0.5262368815592204,
+        "f1": 0.4397577782418041,
+        "roc_auc": 0.8583435603895962,
+        "pr_auc": 0.38901661342376537
+      },
+      "test": {
+        "threshold": 0.7594,
+        "accuracy": 0.907762924246993,
+        "precision": 0.36944444444444446,
+        "recall": 0.5317341329335332,
+        "f1": 0.4359762343782012,
+        "roc_auc": 0.864078312420318,
+        "pr_auc": 0.3993658122280963
+      }
+    }
+  },
+  "risk_bands": [
+    {
+      "risk_band": "Low (<5%)",
+      "applicants": 20926,
+      "actual_default_rate": 0.0167
+    },
+    {
+      "risk_band": "Medium (5-20%)",
+      "applicants": 5975,
+      "actual_default_rate": 0.0959
+    },
+    {
+      "risk_band": "High (>20%)",
+      "applicants": 2946,
+      "actual_default_rate": 0.3663
+    }
+  ],
+  "top_decile_default_rate": 0.3636058981233244,
+  "top_decile_capture_of_defaults": 0.5422288855572214,
+  "permutation_importance": {
+    "total_late": 0.20884,
+    "utilization": 0.06024,
+    "late_90": 0.01795,
+    "debt_ratio": 0.00796,
+    "open_credit_lines": 0.00719,
+    "age": 0.00704,
+    "debt_payment_est": 0.00494,
+    "credit_lines_per_age": 0.00473,
+    "real_estate_loans": 0.00383,
+    "monthly_income": 0.00301,
+    "late_60_89": 0.00288,
+    "income_per_person": 0.00198
+  },
+  "logreg_coefficients": {
+    "utilization": 0.828,
+    "debt_ratio_extreme": -0.489,
+    "debt_payment_est": 0.409,
+    "utilization_extreme": -0.409,
+    "any_late": 0.36,
+    "age": -0.264,
+    "severe_late": 0.206,
+    "late_60_89": 0.176,
+    "monthly_income": -0.145,
+    "total_late": 0.127
+  }
+}

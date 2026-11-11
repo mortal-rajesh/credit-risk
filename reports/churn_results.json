@@ -1,0 +1,112 @@
+{
+  "selected_model": "Gradient Boosting",
+  "results": {
+    "Logistic Regression": {
+      "validation": {
+        "threshold": 0.5257,
+        "accuracy": 0.745,
+        "precision": 0.4188976377952756,
+        "recall": 0.6535626535626535,
+        "f1": 0.510556621880998,
+        "roc_auc": 0.773651926194299,
+        "pr_auc": 0.4890020648937978
+      },
+      "test": {
+        "threshold": 0.5257,
+        "accuracy": 0.74,
+        "precision": 0.41529235382308843,
+        "recall": 0.6805896805896806,
+        "f1": 0.515828677839851,
+        "roc_auc": 0.7867034985679053,
+        "pr_auc": 0.5053298625894075
+      }
+    },
+    "Random Forest": {
+      "validation": {
+        "threshold": 0.5535,
+        "accuracy": 0.857,
+        "precision": 0.6563307493540051,
+        "recall": 0.6240786240786241,
+        "f1": 0.6397984886649875,
+        "roc_auc": 0.8596932834220969,
+        "pr_auc": 0.6735363870885807
+      },
+      "test": {
+        "threshold": 0.5535,
+        "accuracy": 0.846,
+        "precision": 0.6259541984732825,
+        "recall": 0.6044226044226044,
+        "f1": 0.615,
+        "roc_auc": 0.8620176416786586,
+        "pr_auc": 0.6876205556628027
+      }
+    },
+    "Gradient Boosting": {
+      "validation": {
+        "threshold": 0.6305,
+        "accuracy": 0.8545,
+        "precision": 0.6464646464646465,
+        "recall": 0.628992628992629,
+        "f1": 0.6376089663760897,
+        "roc_auc": 0.8579303494557732,
+        "pr_auc": 0.6883917656327193
+      },
+      "test": {
+        "threshold": 0.6305,
+        "accuracy": 0.8465,
+        "precision": 0.6213592233009708,
+        "recall": 0.628992628992629,
+        "f1": 0.6251526251526252,
+        "roc_auc": 0.8656237130813401,
+        "pr_auc": 0.7133326132826745
+      }
+    }
+  },
+  "permutation_importance": {
+    "Age": 0.27085,
+    "NumOfProducts": 0.26112,
+    "IsActiveMember": 0.10608,
+    "Geography": 0.03784,
+    "Balance": 0.0285,
+    "Gender": 0.0121,
+    "balance_salary_ratio": 0.01048,
+    "Tenure": 0.00139,
+    "EstimatedSalary": 0.00095,
+    "germany_multi": 0.00087,
+    "CreditScore": 0.00077,
+    "HasCrCard": 0.00049,
+    "zero_balance": -0.0001
+  },
+  "silhouette_by_k": {
+    "3": 0.14487687748745942,
+    "4": 0.14811348854170334,
+    "5": 0.15525107393089707,
+    "6": 0.16425148828474198
+  },
+  "chosen_k": 6,
+  "churn_rate": 0.2037,
+  "n_customers": 10000,
+  "split": {
+    "train": 6000,
+    "val": 2000,
+    "test": 2000
+  },
+  "churn_bands": [
+    {
+      "churn_band": "Low",
+      "customers": 6183,
+      "actual_churn_rate": 0.0579
+    },
+    {
+      "churn_band": "Medium",
+      "customers": 2410,
+      "actual_churn_rate": 0.2639
+    },
+    {
+      "churn_band": "High",
+      "customers": 1407,
+      "actual_churn_rate": 0.7413
+    }
+  ],
+  "high_band_capture": 0.5120274914089347
+}
