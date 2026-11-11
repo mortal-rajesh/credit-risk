@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # FinTrust Bank: Credit Risk & Retention Analytics
 
 Internship project: default prediction, churn prediction, customer segmentation, Streamlit dashboard.
@@ -23,3 +24,6 @@ To rebuild the credit data: `from src.data_cleaning import clean_credit` on the 
 
 ## Important limitation
 The credit and churn datasets describe different people. The platform therefore reports default risk for loan applicants and churn risk + segment for existing customers separately; it never claims one person has all three scores.
+=======
+# credit-risk
+>>>>>>> c84ba79dd4b12b4415cfe650b6b4dcce9b5737e4
